@@ -34,11 +34,12 @@ echo "Downloading MSCOCO test images ..."
 curl -LO http://images.cocodataset.org/zips/test2015.zip
 
 cd ../
+'''
 if [ ! -d annotations]
   then
     mkdir -p ./annotations
 fi
-
+'''
 # Download the annotation data
 cd ./annotations
 echo "Downloading MSCOCO train/val annotations ..."
