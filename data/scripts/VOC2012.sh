@@ -8,8 +8,8 @@ if [ -z "$1" ]
   then
     # navigate to ~/data
     echo "navigating to /content/SSD-EBM/data ..." 
-    mkdir -p /content/SSD-EMB.Pytorch/data
-    cd /content/SSD-EMB.Pytorch/data
+    mkdir -p /content/SSD-EBM/data
+    cd /content/SSD-EBM/data
   else
     # check if is valid directory
     if [ ! -d $1 ]; then
