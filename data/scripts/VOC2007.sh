@@ -6,10 +6,10 @@ start=`date +%s`
 # handle optional download dir
 if [ -z "$1" ]
   then
-    # navigate to ~/data
-    echo "navigating to ~/data/ ..." 
-    mkdir -p ~/data
-    cd ~/data/
+    # navigate to /content/data
+    echo "navigating to /content/SSD-EMB.Pytorch/data ..."
+    mkdir -p /content/SSD-EMB.Pytorch/data
+    cd /content/SSD-EMB.Pytorch/data
   else
     # check if is valid directory
     if [ ! -d $1 ]; then

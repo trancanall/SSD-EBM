@@ -26,11 +26,11 @@ parser = argparse.ArgumentParser(
 train_set = parser.add_mutually_exclusive_group()
 parser.add_argument('--input', default=300, type=int, choices=[300, 512],
                     help='SSD input size, currently support ssd300 and ssd512')
-parser.add_argument('--dataset', default='COCO', choices=['VOC', 'COCO'],
+parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO'],
                     type=str, help='VOC or COCO')
 parser.add_argument('--dataset_root', default=VOC_ROOT,
                     help='Dataset root directory path')
-parser.add_argument('--basenet', default='vgg16_reducedfc.pth',
+parser.add_argument('--basenet', default='/content/SSD-EMB.Pytorch/weights/vgg16_reducedfc.pth',
                     help='Pretrained base model')
 parser.add_argument('--batch_size', default=32, type=int,
                     help='Batch size for training')
@@ -52,7 +52,7 @@ parser.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
 parser.add_argument('--visdom', default=False, type=str2bool,
                     help='Use visdom for loss visualization')
-parser.add_argument('--save_folder', default='/content/SSD-EBM/weights/',
+parser.add_argument('--save_folder', default='/.',
                     help='Directory for saving checkpoint models')
 args = parser.parse_args()
 

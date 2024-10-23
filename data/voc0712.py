@@ -25,7 +25,7 @@ VOC_CLASSES = (  # always index 0
     'sheep', 'sofa', 'train', 'tvmonitor')
 
 # note: if you used our download scripts, this should be right
-VOC_ROOT = osp.join('./', "data/VOCdevkit/")
+VOC_ROOT = osp.join('/content/SSD-EMB.Pytorch/data/VOCdevkit')
 
 
 class VOCAnnotationTransform(object):
