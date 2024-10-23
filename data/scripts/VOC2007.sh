@@ -7,7 +7,7 @@ start=`date +%s`
 if [ -z "$1" ]
   then
     # navigate to /content/data
-    echo "navigating to /content/SSD-EMB.Pytorch/data ..."
+    echo "navigating to /content/SSD-EBM/data ..."
     mkdir -p /content/SSD-EMB.Pytorch/data
     cd /content/SSD-EMB.Pytorch/data
   else

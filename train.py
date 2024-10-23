@@ -30,7 +30,7 @@ parser.add_argument('--dataset', default='VOC', choices=['VOC', 'COCO'],
                     type=str, help='VOC or COCO')
 parser.add_argument('--dataset_root', default=VOC_ROOT,
                     help='Dataset root directory path')
-parser.add_argument('--basenet', default='/content/SSD-EMB.Pytorch/weights/vgg16_reducedfc.pth',
+parser.add_argument('--basenet', default='vgg16_reducedfc.pth',
                     help='Pretrained base model')
 parser.add_argument('--batch_size', default=32, type=int,
                     help='Batch size for training')
@@ -52,7 +52,7 @@ parser.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
 parser.add_argument('--visdom', default=False, type=str2bool,
                     help='Use visdom for loss visualization')
-parser.add_argument('--save_folder', default='/.',
+parser.add_argument('--save_folder', default='/content/SSD-EBM/weights/',
                     help='Directory for saving checkpoint models')
 args = parser.parse_args()
 
@@ -148,7 +148,7 @@ def train():
     data_loader = data.DataLoader(dataset, args.batch_size,
                                   num_workers=args.num_workers,
                                   shuffle=True, collate_fn=detection_collate,
-                                  pin_memory=True)
+                                  pin_memory=True,generator = torch.Generator(device='cuda'))
     # create batch iterator
     batch_iterator = iter(data_loader)
     print('max_iter: ', cfg['SSD{}'.format(args.input)]['max_iter'])
