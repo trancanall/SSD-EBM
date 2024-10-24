@@ -52,7 +52,7 @@ parser.add_argument('--gamma', default=0.1, type=float,
                     help='Gamma update for SGD')
 parser.add_argument('--visdom', default=False, type=str2bool,
                     help='Use visdom for loss visualization')
-parser.add_argument('--save_folder', default='/content/SSD-EBM/weights/',
+parser.add_argument('--save_folder', default='/content/drive/weights/',
                     help='Directory for saving checkpoint models')
 args = parser.parse_args()
 
@@ -202,7 +202,7 @@ def train():
 
         if iteration != 0 and iteration % 5000 == 0:
             print('Saving state, iter:', iteration)
-            torch.save(ssd_net.state_dict(), 'weights/ssd{}_VOC_b32_'.format(args.input) +
+            torch.save(ssd_net.state_dict(), '/content/drive/weights/ssd{}_VOC_b32_'.format(args.input) +
                        repr(iteration) + '.pth')
     torch.save(ssd_net.state_dict(),
                args.save_folder + '' + args.dataset + '.pth')
