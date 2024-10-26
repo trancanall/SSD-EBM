@@ -4,6 +4,7 @@ Released under the MIT license
 https://github.com/amdegroot/ssd.pytorch
 Updated by: Takuya Mouri
 """
+from data.config import coco, voc
 import torch
 from torch.autograd import Function
 from ..box_utils import decode, nms
@@ -39,7 +40,7 @@ class Detect(Function):
         if nms_thresh <= 0:
             raise ValueError('nms_threshold must be non negative.')
         self.conf_thresh = conf_thresh
-        self.variance = cfg['variance']
+        self.variance = [0.1, 0.2]
     # PyTorch1.5.0 support new-style autograd function
         """
         Args:
