@@ -1,4 +1,4 @@
-![6000literation](https://github.com/user-attachments/assets/4c691d91-b99b-441e-8812-66c97c66faec)# SSD-EMB: An Improved SSD using Enhanced Feature Map Block for Object Detection
+# SSD-EMB: An Improved SSD using Enhanced Feature Map Block for Object Detection
 This is implementtation of SSD-EMB from Hong-Tae Choi, Ho-Jun Lee, Hoon Kang, Sungwook Yu, and Ho-Hyun Park.
 This code is heavily depend on [here](https://github.com/amdegroot/ssd.pytorch). We make some changes, fix some bugs, and give out our code.
 Thank you to deGroot and his team.
