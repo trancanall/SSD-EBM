@@ -1,4 +1,4 @@
-# SSD-EMB: An Improved SSD using Enhanced Feature Map Block for Object Detection
+![6000literation](https://github.com/user-attachments/assets/4c691d91-b99b-441e-8812-66c97c66faec)# SSD-EMB: An Improved SSD using Enhanced Feature Map Block for Object Detection
 This is implementtation of SSD-EMB from Hong-Tae Choi, Ho-Jun Lee, Hoon Kang, Sungwook Yu, and Ho-Hyun Park.
 This code is heavily depend on [here](https://github.com/amdegroot/ssd.pytorch). We make some changes, fix some bugs, and give out our code.
 Thank you to deGroot and his team.
@@ -126,7 +126,10 @@ You can specify the parameters listed in the `eval.py` file by flagging them or 
 **RTX 2080Ti:** ~30 FPS
 
 ## Notice
-***Note:*** The current code is not neatly organized, so we will keep updating it. The final code will be uploaded soon.
+***Note:*** This code is not mine,just adjust some parameters to run on latest colab version.
+## Different from 6000 literation to 36000 literation
+<img align="left" src= "https://github.com/user-attachments/assets/d6a3dfca-2c57-46c7-a928-c3e759183910">
+<img align="right" src= "https://github.com/user-attachments/assets/0a1dae47-df41-4faa-8d90-3de55798ea54">
 
 ## References
 - Wei Liu, et al. "SSD: Single Shot MultiBox Detector." [ECCV2016]((http://arxiv.org/abs/1512.02325)).
