@@ -131,6 +131,9 @@ You can specify the parameters listed in the `eval.py` file by flagging them or 
 <img align="left" src= "https://github.com/user-attachments/assets/d6a3dfca-2c57-46c7-a928-c3e759183910" width="400px">
 <img align="right" src= "https://github.com/user-attachments/assets/0a1dae47-df41-4faa-8d90-3de55798ea54" width="400px">
 
+
+
+
 ## References
 - Wei Liu, et al. "SSD: Single Shot MultiBox Detector." [ECCV2016]((http://arxiv.org/abs/1512.02325)).
 - [Original SSD Implementation (CAFFE)](https://github.com/weiliu89/caffe/tree/ssd)
